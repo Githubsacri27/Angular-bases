@@ -1,32 +1,11 @@
-<div class="container mt-5">
-    <h1 class="text-center mb-4">DBZ Personajes</h1>
-    <hr>
+<h1>DBZ Personajes</h1>
+<hr>
 
-    <div class="row">
-        <div class="col-md-6">
-            <h4 class="text-primary">Listado</h4>
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Krillin
-                    <span class="badge badge-danger badge-pill">500</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Goku
-                    <span class="badge badge-danger badge-pill">10,000</span>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-6">
-            <h4 class="text-primary">Agregar Personaje</h4>
-            <form>
-                <div class="form-group">
-                    <input type="text" class="form-control mb-2" placeholder="Nombre" required>
-                </div>
-                <div class="form-group">
-                    <input type="number" class="form-control mb-2" placeholder="Poder" required>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Agregar</button>
-            </form>
-        </div>
+<div class="row">
+    <div class="col">
+        <dbz-list [characterList]="characters" ></dbz-list>
+    </div>
+    <div class="col">
+        <dbz-add-character></dbz-add-character>
     </div>
 </div>
