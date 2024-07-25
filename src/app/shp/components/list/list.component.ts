@@ -1,24 +1,25 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Character } from '../../interfaces/character.interface';
+import { Product } from '../../interfaces/product.interface';
 
 @Component({
-  selector: 'dbz-list',
+  selector: 'shp-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css'],
 })
 export class ListComponent {
   @Input()
-  public characterList: Character[] = [
+  public productList: Product[] = [
     {
       name: 'Trunks',
-      power: 100,
+      quantity: 100,
+      price: 1000,
     },
   ];
 
   @Output()
   public onDelete: EventEmitter<string> = new EventEmitter();
 
-  onDeleteCharacter(id?: string): void {
+  onDeleteProduct(id?: string): void {
     if (!id) return;
     this.onDelete.emit(id);
   }

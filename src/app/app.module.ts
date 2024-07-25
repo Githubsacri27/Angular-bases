@@ -6,7 +6,8 @@ import { HeroesModule } from './heroes/heroes.module';
 
 import { AppComponent } from './app.component';
 
-import { DbzModule } from './dbz/dbz.module';
+import { shpModule } from './shp/shp.module';
+
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { DbzModule } from './dbz/dbz.module';
     BrowserModule,
     CounterModule,
     HeroesModule,
-    DbzModule,
+    shpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

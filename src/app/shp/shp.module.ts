@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MainPageComponent } from './pages/main-page.component';
 import { ListComponent } from './components/list/list.component';
-import { AddCharacterComponent } from './components/add-character/add-character.component';
+import { AddProductComponent } from './components/add-product/add-product.component';
 
 
 
@@ -13,7 +13,7 @@ import { AddCharacterComponent } from './components/add-character/add-character.
   declarations: [
     MainPageComponent,
     ListComponent,
-    AddCharacterComponent,
+    AddProductComponent,
   ],
   exports: [
     MainPageComponent
@@ -23,4 +23,4 @@ import { AddCharacterComponent } from './components/add-character/add-character.
     FormsModule
   ]
 })
-export class DbzModule { }
+export class shpModule { }
